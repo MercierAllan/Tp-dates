@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        DateTime dateActuelle = DateTime.Now;
+        Console.WriteLine("Date par défaut : " + dateActuelle);
+        Console.WriteLine("Date formatée : " + dateActuelle.ToString("dd/MM/yyyy"));
+        Console.WriteLine("Appuyez sur une touche pour continuer...");
+        Console.ReadKey();
     }
 }
