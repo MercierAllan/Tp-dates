@@ -96,5 +96,27 @@ class Program
         {
             Console.WriteLine("Date invalide");
         }
+
+         //Partie 8
+        Console.WriteLine("Entrez une date (JJ/MM/AAAA) : ");
+        string saisie2 = Console.ReadLine();
+
+        DateTime date;
+
+        if (DateTime.TryParse(saisie, out date))
+        {
+            Console.WriteLine("Date valide : " + date.ToString("dd/MM/yyyy"));
+        }
+        else
+        {
+            Console.WriteLine("Date invalide");
+        }
+
+        //Partie 9
+        DateTime dateDebut = DateTime.Now;
+        int duree = 5;
+        DateTime dateFin = dateDebut.AddDays(duree);
+        Console.WriteLine("Date de début : " + dateDebut.ToString("dd/MM/yyyy"));
+        Console.WriteLine("Date de fin : " + dateFin.ToString("dd/MM/yyyy"));
     }
 }
